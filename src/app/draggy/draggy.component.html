@@ -1,0 +1,3 @@
+<ul class="activity-list margin-v-0" cdkDropList (cdkDropListDropped)="drop($event)">
+  <li class="task-item" cdkDrag *ngFor="let result of draggyList" [type]="'current'" [projects]="projects" [task]="result" (changed)="onTasksChanged('day')"> </li>
+</ul>
